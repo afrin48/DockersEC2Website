@@ -4,7 +4,7 @@ RUN apt-get install wget unzip -y
 WORKDIR /usr/share/nginx/html
 COPY default.conf /etc/nginx/sites-enabled/
 ADD https://bootstrapmade.com/content/templatefiles/Bootslander/Bootslander.zip
-RUN unzip Booslander.zip
+RUN unzip Bootslander.zip
 RUN mv Bootslander/* .
 RUN rm -rf Bootslander Bootslander.zip
 EXPOSE 80
